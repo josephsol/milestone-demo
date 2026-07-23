@@ -1,0 +1,70 @@
+{
+  "milestones": [
+    {
+      "id": "001-scaffold",
+      "message": "chore: scaffold project structure and tooling config",
+      "paths": [
+        "package.json",
+        "tsconfig.json",
+        ".eslintrc.json",
+        ".prettierrc",
+        ".gitignore",
+        "docker-compose.yml"
+      ]
+    },
+    {
+      "id": "002-db-schema",
+      "message": "feat(db): add Prisma schema and initial migration",
+      "paths": [
+        "prisma/schema.prisma",
+        "prisma/migrations"
+      ]
+    },
+    {
+      "id": "003-auth-backend",
+      "message": "feat(auth): implement JWT authentication with refresh tokens",
+      "paths": [
+        "src/modules/auth"
+      ]
+    },
+    {
+      "id": "004-auth-tests",
+      "message": "test(auth): add authentication unit and integration tests",
+      "paths": [
+        "src/modules/auth/__tests__",
+        "tests/auth"
+      ]
+    },
+    {
+      "id": "005-api-validation",
+      "message": "fix(api): validate request payloads with zod schemas",
+      "paths": [
+        "src/modules/**/dto",
+        "src/middleware/validation.ts"
+      ]
+    },
+    {
+      "id": "006-dashboard-ui",
+      "message": "feat(ui): build responsive dashboard with dark mode",
+      "paths": [
+        "src/app/dashboard",
+        "src/components/dashboard"
+      ]
+    },
+    {
+      "id": "007-ci",
+      "message": "ci: add GitHub Actions pipeline for lint, test, and build",
+      "paths": [
+        ".github/workflows"
+      ]
+    },
+    {
+      "id": "008-docs",
+      "message": "docs: improve README with setup, architecture, and API docs",
+      "paths": [
+        "README.md",
+        "docs"
+      ]
+    }
+  ]
+}
